@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [.pink.opacity(0.3), .purple.opacity(0.5)] ), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            KeyView()
+        }
     }
 }
 
